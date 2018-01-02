@@ -59,6 +59,14 @@ class EventListener implements Listener {
                 } else {
                         foreach($event->getDrops() as $drop) {
                                 $event->getPlayer()->getInventory()->addItem($drop);
+                                //add use pocketmine\math\Vector3;
+                                //add use pocketmine\level\Level;
+                                //add use pocketmime\block\Block;
+                                //$b = $break->getBlock();
+                                //$block = new Vector3($b->getX(), $b->getY(), $b->getZ());
+                                //$b->getLevel()->setBlock($block,Block::get(0));
+                                //delete bug (replace block)
+                                //please fix
                         }
                 }
                 $event->setDrops([]);
